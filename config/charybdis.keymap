@@ -44,7 +44,7 @@
 // ├──────────┼────────────────┼────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┼─────────────────┼────────────────────────┼───────────┤
     &kp LSHFT  &kp Z            &kp X            &kp C             &kp V             &kp B     &kp N  &kp M              &mm_cm_sc          &mm_pr_col        &mm_qm_ex                 &kp RSHFT
 // ╰──────────┴────────────────┴────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┴─────────────────┴────────────────────────┴───────────╯
-                                                           &td_esc_scrl_slow  &mo 3  &mo 1     &kp ENTER  &td_space_nav
+                                                           &td_esc_scrl_slow  &td_space_sym  &mo 1     &kp ENTER  &td_space_nav
                                                        // ╰──────────────────┴──────┴──────╯  ╰──────────┴──────────────╯
             >;
         };
@@ -54,15 +54,15 @@
 &trans   &none  &none  &none  &none          &none            &kp ASTRK  &ht_num_func F7 N7  &ht_num_func F8 N8  &ht_num_func F9 N9  &kp F10                 &none
 &trans   &none  &none  &none  &kp BACKSPACE  &none            &kp MINUS  &ht_num_func F4 N4  &ht_num_func F5 N5  &ht_num_func F6 N6  &ht_num_func F11 PLUS   &trans
 &none    &none  &none  &none  &none          &none            &kp EQUAL  &ht_num_func F1 N1  &ht_num_func F2 N2  &ht_num_func F3 N3  &ht_num_func F12 SLASH  &none
-                       &none  &none          &trans           &kp N0     &kp SPACE
+                       &none  &kp SPACE      &trans           &kp N0     &kp SPACE
             >;
         };
 
         NAV {
             bindings = <
 &none   &none     &none   &none   &none   &none        &detach_session  &create_or_attach  &next_pane   &show_sessions  &sync_panes       &none
-&trans  &mkp MB4  &trans  &trans  &trans  &mkp MB5     &h_split         &kp LEFT_ARROW     &kp DOWN     &kp UP          &kp RIGHT_ARROW   &none
-&none   &none     &none   &none   &none   &none        &v_split         &kp HOME           &kp PG_DN    &kp PG_UP       &kp END           &none
+&trans  &mkp MB4  &trans  &trans  &trans  &mkp MB5     &kp LEFT_ARROW     &kp DOWN     &kp UP          &kp RIGHT_ARROW  &none             &h_split 
+&none   &none     &none   &none   &none   &none        &none              &kp HOME     &kp PG_DN       &kp PG_UP        &kp END           &v_split
                         &none   &none   &trans         &trans   &trans
             >;
         };

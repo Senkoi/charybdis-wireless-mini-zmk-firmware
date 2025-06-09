@@ -54,6 +54,12 @@
             bindings = <&lt 2 SPACE>, <&kp SPACE>; // hold, tap, double_tap
         };
 
+        td_space_sym: td_space {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <85>;
+            bindings = <&lt 3 SPACE>, <&kp SPACE>; // hold, tap, double_tap
+        };
         td_bs: td_bs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
