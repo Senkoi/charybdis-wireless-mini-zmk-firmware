@@ -70,7 +70,7 @@
         SYM {
             bindings = <
 &none  &kp GRAVE  &kp LT     &kp GT    &kp MINUS  &kp PIPE      &kp CARET   &kp LBRC  &kp RBRC   &kp DLLR &kp LC(SEMI) &none
-&none  &kp EXCL   &kp ASTRK  &kp FSLH  &kp EQUAL  &kp AMPS      &kp HASH    &kp LPAR  &kp RPAR   &kp SEMI &kp APOS     &none
+&none  &kp EXCL   &kp ASTRK  &kp FSLH  &kp EQUAL  &kp AMPS      &kp HASH    &kp LPAR  &kp RPAR   &kp SEMI &kp LS(APOS)     &none
 &none  &kp TILDE  &kp PLUS   &kp LBKT  &kp RBKT   &kp PRCNT     &kp AT_SIGN &kp COLON &kp COMMA  &kp DOT &kp SQT       &none
                    &trans  &trans  &trans      &trans      &trans
             >;
