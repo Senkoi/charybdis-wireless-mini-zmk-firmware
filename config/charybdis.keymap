@@ -69,7 +69,7 @@
 
         SYM {
             bindings = <
-&none   &kp GRAVE        &kp LT        &kp GT        &kp MINUS     &kp UNDERSCORE   &kp CARET        &kp LBRC         &kp RBRC         &kp DOLLAR      &kp LC(LC(';'))     &none
+&none   &kp GRAVE        &kp LT        &kp GT        &kp MINUS     &kp UNDERSCORE   &kp CARET        &kp LBRC         &kp RBRC         &kp DOLLAR      &kp LC(SEMICOLON)   &none
 &none   &kp EXCLAMATION  &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp AMPERSAND    &kp HASH         &kp LPAREN       &kp RPAREN       &kp SEMICOLON   &kp DOUBLE_QUOTES   &none
 &none   &kp TILDE        &kp PLUS      &kp LBKT      &kp RBKT      &kp PERCENT      &kp AT_SIGN      &kp COLON        &kp COMMA        &kp DOT         &kp APOSTROPHE      &none
                    &trans  &trans  &trans      &trans      &trans
