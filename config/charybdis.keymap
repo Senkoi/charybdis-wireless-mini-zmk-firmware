@@ -44,16 +44,16 @@
 // ├──────────┼────────────────┼────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┼─────────────────┼────────────────────────┼───────────┤
     &kp LSHFT  &kp Z            &kp X            &kp C             &kp V             &kp B     &kp N  &kp M              &mm_cm_sc          &mm_pr_col        &mm_qm_ex                 &kp RSHFT
 // ╰──────────┴────────────────┴────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┴─────────────────┴────────────────────────┴───────────╯
-                                                           &td_esc_scrl_slow  &td_space_sym  &mo 1     &kp ENTER  &td_space_nav
-                                                       // ╰──────────────────┴──────┴──────╯  ╰──────────┴──────────────╯
+                                                    &td_esc_scrl_slow  &td_space_sym  &mo 1     &kp ENTER  &td_space_nav
+                                                // ╰──────────────────┴──────────────┴─────╯  ╰──────────┴──────────────╯
             >;
         };
 
         NUM {
             bindings = <
-&trans   &none  &none  &none  &none          &none            &kp ASTRK  &ht_num_func F7 N7  &ht_num_func F8 N8  &ht_num_func F9 N9  &kp F10                 &none
-&trans   &none  &none  &none  &kp BACKSPACE  &none            &kp MINUS  &ht_num_func F4 N4  &ht_num_func F5 N5  &ht_num_func F6 N6  &ht_num_func F11 PLUS   &trans
-&none    &none  &none  &none  &none          &none            &kp EQUAL  &ht_num_func F1 N1  &ht_num_func F2 N2  &ht_num_func F3 N3  &ht_num_func F12 SLASH  &none
+&trans   &none     &none     &none      &none          &none            &kp ASTRK  &ht_num_func F7 N7  &ht_num_func F8 N8  &ht_num_func F9 N9  &kp F10                 &none
+&kp TAB  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL      &none            &kp MINUS  &ht_num_func F4 N4  &ht_num_func F5 N5  &ht_num_func F6 N6  &ht_num_func F11 PLUS   &BSPC
+&none    &none     &none     &none      &none          &none            &kp EQUAL  &ht_num_func F1 N1  &ht_num_func F2 N2  &ht_num_func F3 N3  &ht_num_func F12 SLASH  &none
                        &none  &kp SPACE      &trans           &kp N0     &kp SPACE
             >;
         };
@@ -69,9 +69,9 @@
 
         SYM {
             bindings = <
-&none  &none  &none  &none  &none   &none      &kp ASTRK   &kp AMPS       &kp LEFT_BRACE &kp DLLR &kp GRAVE &kp EXCL
-&none  &none  &none  &none  &trans  &none      &kp MINUS   &kp SEMICOLON  &kp LPAR       &kp LBKT &kp PLUS  &kp PIPE
-&none  &none  &none  &none  &none   &none      &kp AT_SIGN &kp UNDERSCORE &kp LT         &kp HASH &kp PRCNT &kp BSLH
+&none   &kp GRAVE        &kp LT        &kp GT        &kp MINUS     &kp UNDERSCORE   &kp CARET        &kp LBRC         &kp RBRC         &kp DOLLAR      &kp LC(LC(';'))     &none
+&none   &kp EXCLAMATION  &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp AMPERSAND    &kp HASH         &kp LPAREN       &kp RPAREN       &kp SEMICOLON   &kp DOUBLE_QUOTES   &none
+&none   &kp TILDE        &kp PLUS      &kp LBKT      &kp RBKT      &kp PERCENT      &kp AT_SIGN      &kp COLON        &kp COMMA        &kp DOT         &kp APOSTROPHE      &none
                    &trans  &trans  &trans      &trans      &trans
             >;
         };
