@@ -38,7 +38,7 @@ layers:
   - {t: '?', s: '!'}
   - RSHFT
   - ESC SCRL SLOW
-  - SYM
+  - '&td_space_sym'
   - NUM
   - ENTER
   - SPACE NAV
@@ -80,7 +80,7 @@ layers:
   - {t: /, h: DEV TOOLS}
   - ''
   - ''
-  - ''
+  - SPACE
   - {type: held}
   - '0'
   - SPACE
@@ -103,24 +103,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - FWD
-  - HSPLIT
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - ''
+  - HSPLIT
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - VSPLIT
+  - ''
   - HOME
   - PG DN
   - PG UP
   - END
-  - ''
+  - VSPLIT
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -164,7 +164,7 @@ layers:
   - '%'
   - \
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
