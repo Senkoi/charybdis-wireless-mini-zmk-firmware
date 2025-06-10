@@ -175,6 +175,7 @@ jobs:
               "&studio_unlock": "ZMK Studio",
               "&td_esc_scrl_slow": "ESC SCRL SLOW",
               "&td_space_nav": "SPACE NAV",
+              "&td_space_sym": "SPACE SYM",
               "&detach_session": "TMUX DETCH",
               "&create_or_attach": "TMUX ATTCH",
               "&next_pane" : "TMUX NEXT",
