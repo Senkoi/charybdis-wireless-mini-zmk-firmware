@@ -56,10 +56,10 @@ layers:
   - F10
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - BACK SPACE
+  - LCMD
+  - LALT
+  - LSHFT
+  - LCTRL
   - ''
   - '-'
   - {t: '4', h: F4}
