@@ -122,6 +122,9 @@
         };
     };
     /* input config for mouse move mode */
+    vtrackball: virtual_input_trackball {
+        compatible = "zmk,virtual-input";
+    };
     trackball_move_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
