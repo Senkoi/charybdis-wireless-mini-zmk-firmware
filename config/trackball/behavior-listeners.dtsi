@@ -63,13 +63,10 @@
         };
         scroll {
             layers = <8>;
-            evt-type = <INPUT_EV_REL>;
-            x-input-code = <INPUT_REL_HWHEEL>;
-            y-input-code = <INPUT_REL_WHEEL>;
             input-processors =
                 <&zip_xy_scaler 1 20>,
-                <&zip_xy_to_scroll_mapper>;
-                //<&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>;
         };
     };
 };
