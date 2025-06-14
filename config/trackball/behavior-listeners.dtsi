@@ -13,7 +13,7 @@
     // };
 
     /* input config for slow move mode */
-    trackball_snipe_listener {
+/*    trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";   
         device = <&vtrackball>;
         layers = <7>;
@@ -50,5 +50,24 @@
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
         time-to-live-ms = <750>;
+    };
+    */
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        move {
+            layers = <0 6>;
+            input-processors = <&zip_xy_scaler 1 2>;
+        };
+
+        scroll {
+            layers = <8>;
+            input-processors =
+                <&zip_xy_scaler 1 20>,
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_transform (INPUT_TRANCE_Y_INVERT);
+        };
     };
 };
