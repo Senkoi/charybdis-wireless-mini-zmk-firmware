@@ -1,5 +1,7 @@
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/input_transform.h>
 
 // The matrix transform is 6 columns over because the left half is 6 columns wide.
 &default_transform {
