@@ -91,7 +91,7 @@
         td_bore: BASE_or_EXTRA {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&mo 6>, <&to 0>;
+            bindings = <&mo 5>, <&to 0>;
         };
 
         // td_grave: DoubleTap_Grave {
