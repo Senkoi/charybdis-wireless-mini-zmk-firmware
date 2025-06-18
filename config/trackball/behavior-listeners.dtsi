@@ -53,10 +53,16 @@
     };
     */
 
+    zip_distance_filter_layer: zip_distance_filter_layer {
+        compatible = "zmk,input-processor-distance-filter-layer";
+        timeout-ms = <400>;
+        min-move-threshold = <10>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 9 400>;
+        input-processors = <&zip_distance_filter_layer>, <&zip_temp_layer 9 400>;
         snipe {
             layers = <7>;
             input-processors = <&zip_xy_scaler 1 3>;
