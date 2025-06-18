@@ -1,0 +1,16 @@
+description: Distance filter input processor for ZMK
+
+compatible: "zmk,input-processor-distance-filter-layer"
+
+include: base.yaml
+
+properties:
+  timeout-ms:
+    type: int
+    required: true
+  min-move-threshold:
+    type: int
+    required: true
+
+input-processor-cells:
+  - name: none
