@@ -55,6 +55,7 @@
 
     zip_distance_filter_layer: zip_distance_filter_layer {
         compatible = "zmk,input-processor-distance-filter-layer";
+        #input-processor-cells = <0>;
         timeout-ms = <400>;
         min-move-threshold = <10>;
     };
