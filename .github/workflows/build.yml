@@ -41,7 +41,7 @@ jobs:
 
       - name: Generate build matrix
         run: |
-          python scripts/geate_matrix.py > build.json
+          python scripts/generate_matrix.py > build.json
 
       - name: Make groups JSON
         id: make-groups
