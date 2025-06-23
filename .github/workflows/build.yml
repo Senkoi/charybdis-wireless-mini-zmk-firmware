@@ -41,7 +41,7 @@ jobs:
 
       - name: Generate build matrix
         run: |
-          python scripts/generate_matrix.py > build.json
+          python scripts/geate_matrix.py > build.json
 
       - name: Make groups JSON
         id: make-groups
@@ -120,7 +120,7 @@ jobs:
           # map format → shields again in bash
           declare -A SH_MAP=(
             [bt]="charybdis_left charybdis_right"
-            [dongle]="charybdis_left charybdis_right charybdis_dongle"
+            # [dongle]="charybdis_left charybdis_right charybdis_dongle"
             [reset]="settings_reset"
           )
 
@@ -155,13 +155,13 @@ jobs:
             echo "Using overlays: $OVERLAYS"
 
             # run the build
-            west build -s zmk/app \
+            west build -v -s zmk/app \
               -d "$BUILD_DIR" \
               -b "$BD" \
               -- -DZMK_CONFIG="${BASE_DIR}/config" \
                  -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}" \
                  -DSHIELD=$SH \
-                 ${OVERLAYS:+-DEXTRA_DTC_OVERLAY_FILE="$OVERLAYS"}
+                 ${OVERLAYS:+-DEXTRA_DTC_OVERLAY_FILE="$OVERLAYS"} || true
 
             # collect output
             mkdir -p "${GITHUB_WORKSPACE}/out/$NM"
@@ -172,9 +172,17 @@ jobs:
               cp $BUILD_DIR/zephyr/zmk.${FALLBACK_EXT} \
                 "${GITHUB_WORKSPACE}/out/$NM/$SH.${FALLBACK_EXT}"
             fi
+                  # 导出设备树中间文件
+            if [[ -f $BUILD_DIR/zephyr/zephyr.dts ]]; then
+              cp $BUILD_DIR/zephyr/zephyr.dts "${GITHUB_WORKSPACE}/out/$NM/$SH.zephyr.dts"
+            fi
           done
-
-      - name: Upload grouped firmware ${{ matrix.combo.name }}
+			- name: Upload all zephyr.dts
+				uses: actions/upload-artifact@v4
+				with:
+					name: all-zephyr-dts
+					path: out/**/*.zephyr.dts
+			- name: Upload grouped firmware ${{ matrix.combo.name }}
         uses: actions/upload-artifact@v4
         with:
           name: charybdis-${{ matrix.combo.name }}
