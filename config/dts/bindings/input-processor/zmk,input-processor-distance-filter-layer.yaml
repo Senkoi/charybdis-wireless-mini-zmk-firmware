@@ -12,5 +12,4 @@ properties:
     type: int
     required: true
 
-input-processor-cells:
-  - name: none
+input-processor-cells: []
