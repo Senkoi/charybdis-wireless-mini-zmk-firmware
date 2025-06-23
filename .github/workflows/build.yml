@@ -156,13 +156,15 @@ jobs:
             echo "Using overlays: $OVERLAYS"
 
             # run the build
+            {
             west build -s zmk/app \
               -d "$BUILD_DIR" \
               -b "$BD" \
               -- -DZMK_CONFIG="${BASE_DIR}/config" \
                  -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}" \
                  -DSHIELD=$SH \
-                 ${OVERLAYS:+-DEXTRA_DTC_OVERLAY_FILE="$OVERLAYS"} || true
+                 ${OVERLAYS:+-DEXTRA_DTC_OVERLAY_FILE="$OVERLAYS"}
+            } || true
 
             # collect output
             mkdir -p "${GITHUB_WORKSPACE}/out/$NM"
