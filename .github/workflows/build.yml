@@ -177,12 +177,14 @@ jobs:
               cp $BUILD_DIR/zephyr/zephyr.dts "${GITHUB_WORKSPACE}/out/$NM/$SH.zephyr.dts"
             fi
           done
-			- name: Upload all zephyr.dts
-				uses: actions/upload-artifact@v4
-				with:
-					name: all-zephyr-dts
-					path: out/**/*.zephyr.dts
-			- name: Upload grouped firmware ${{ matrix.combo.name }}
+
+      - name: Upload all zephyr.dts
+        uses: actions/upload-artifact@v4
+        with:
+          name: all-zephyr-dts
+          path: out/**/*.zephyr.dts
+
+      - name: Upload grouped firmware ${{ matrix.combo.name }}
         uses: actions/upload-artifact@v4
         with:
           name: charybdis-${{ matrix.combo.name }}
