@@ -7,7 +7,7 @@ keymaps = ["qwerty", "colemak_dh", "graphite"]
 # Map each format to the shields it should build
 format_shields = {
     "bt": ["charybdis_left", "charybdis_right"],
-    "dongle": ["charybdis_left", "charybdis_right", "charybdis_dongle"],
+    # "dongle": ["charybdis_left", "charybdis_right", "charybdis_dongle"],
     "reset": ["settings_reset"],
 }
 

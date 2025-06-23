@@ -155,7 +155,7 @@ jobs:
             echo "Using overlays: $OVERLAYS"
 
             # run the build
-            west build -v -s zmk/app \
+            west build -s zmk/app \
               -d "$BUILD_DIR" \
               -b "$BD" \
               -- -DZMK_CONFIG="${BASE_DIR}/config" \
