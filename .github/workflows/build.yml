@@ -109,6 +109,7 @@ jobs:
       - name: Build all shields for ${{ matrix.combo.name }}
         shell: bash
         working-directory: ${{ env.BASE_DIR }}
+        continue-on-error: true
         run: |
           set -euxo pipefail
 

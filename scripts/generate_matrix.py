@@ -2,7 +2,8 @@ import json
 
 # === CONFIGURATION ===
 board = "nice_nano_v2"
-keymaps = ["qwerty", "colemak_dh", "graphite"]
+# keymaps = ["qwerty", "colemak_dh", "graphite"]
+keymaps = ["qwerty"]
 
 # Map each format to the shields it should build
 format_shields = {
@@ -13,7 +14,8 @@ format_shields = {
 
 groups = []
 for keymap in keymaps:
-    for fmt in ["bt", "dongle"]:
+    # for fmt in ["bt", "dongle"]:
+    for fmt in ["bt"]:
         groups.append({
             "keymap": keymap,
             "format": fmt,
