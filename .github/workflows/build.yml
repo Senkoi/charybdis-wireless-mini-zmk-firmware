@@ -182,7 +182,7 @@ jobs:
       - name: Upload all zephyr.dts
         uses: actions/upload-artifact@v4
         with:
-          name: all-zephyr-dts
+          name: all-zephyr-dts-${{ matrix.combo.name }}
           path: out/**/*.zephyr.dts
 
       - name: Upload grouped firmware ${{ matrix.combo.name }}
