@@ -168,16 +168,16 @@ jobs:
 
             # collect output
             mkdir -p "${GITHUB_WORKSPACE}/out/$NM"
+                  # 导出设备树中间文件
+            if [[ -f $BUILD_DIR/zephyr/zephyr.dts ]]; then
+              cp $BUILD_DIR/zephyr/zephyr.dts "${GITHUB_WORKSPACE}/out/$NM/$SH.zephyr.dts"
+            fi
             if [[ -f $BUILD_DIR/zephyr/zmk.uf2 ]]; then
               cp $BUILD_DIR/zephyr/zmk.uf2 \
                 "${GITHUB_WORKSPACE}/out/$NM/$SH.uf2"
             else
               cp $BUILD_DIR/zephyr/zmk.${FALLBACK_EXT} \
                 "${GITHUB_WORKSPACE}/out/$NM/$SH.${FALLBACK_EXT}"
-            fi
-                  # 导出设备树中间文件
-            if [[ -f $BUILD_DIR/zephyr/zephyr.dts ]]; then
-              cp $BUILD_DIR/zephyr/zephyr.dts "${GITHUB_WORKSPACE}/out/$NM/$SH.zephyr.dts"
             fi
           done
 
