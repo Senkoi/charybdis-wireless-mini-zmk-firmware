@@ -1,3 +1,4 @@
+#include "input/processors/move_determin.dtsi"
 / {
     // /* input config for mouse move mode */
     // trackball_move_listener {
