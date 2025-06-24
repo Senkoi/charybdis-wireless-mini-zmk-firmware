@@ -5,6 +5,9 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
+	
+config MOVE_DETERMIN
+	default y
 
 endif
 
