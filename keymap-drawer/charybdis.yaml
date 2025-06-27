@@ -38,10 +38,10 @@ layers:
   - {t: '?', s: '!'}
   - _
   - ESC SCRL SLOW
-  - '&td_space_sym'
+  - SPACE NAV
   - NUM
   - ENTER
-  - SPACE NAV
+  - SYM
   NUM:
   - {t: ▽, type: trans}
   - ''
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   GAME:
   - '1'
   - TAB
@@ -229,11 +229,11 @@ layers:
   - ''
   - ''
   - BRIGHTNESS DEC
-  - ''
   - PREVIOUS
-  - PLAY PAUSE
-  - STOP
+  - VOLUME DOWN
+  - VOLUME UP
   - NEXT
+  - PLAY PAUSE
   - SEARCH
   - LOCK
   - UNDO
@@ -243,8 +243,8 @@ layers:
   - ''
   - NEW DIR
   - MUTE
-  - VOLUME DOWN
-  - VOLUME UP
+  - ''
+  - STOP
   - PRINT SCREEN
   - CLIP HIST
   - ''
@@ -332,8 +332,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - L CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCROLL:
@@ -349,7 +349,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '8'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -376,6 +375,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  AUTO-MOUSE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SLOW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SCROLL
+  - L CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
