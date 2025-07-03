@@ -26,7 +26,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        ht_left_s: left_side_homerow_mod {
+        ht_left_s: left_side_homerow_shift_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -50,7 +50,7 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
-        ht_right_s: right_side_homerow_mod {
+        ht_right_s: right_side_homerow_shift_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
