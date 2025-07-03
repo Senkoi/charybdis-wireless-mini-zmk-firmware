@@ -18,10 +18,21 @@
         ht_left: left_side_homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <160>;
+            require-prior-idle-ms = <140>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+        ht_left_s: left_side_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <145>;
-            require-prior-idle-ms = <110>;
+            require-prior-idle-ms = <130>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             //hold-trigger-on-release;
@@ -31,10 +42,21 @@
         ht_right: right_side_homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <160>;
+            require-prior-idle-ms = <140>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+        };
+        ht_right_s: right_side_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <145>;
-            require-prior-idle-ms = <110>;
+            require-prior-idle-ms = <130>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             //hold-trigger-on-release;
