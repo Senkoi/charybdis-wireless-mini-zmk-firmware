@@ -18,10 +18,10 @@
         ht_left: left_side_homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <145>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <145>;
+            require-prior-idle-ms = <110>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
@@ -31,10 +31,10 @@
         ht_right: right_side_homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <145>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <145>;
+            require-prior-idle-ms = <110>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
