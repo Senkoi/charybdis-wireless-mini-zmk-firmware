@@ -1,4 +1,5 @@
 #include "input/processors/move_determin.dtsi"
+#include "input/processors/move_temp_layer.dtsi"
 / {
     // /* input config for mouse move mode */
     // trackball_move_listener {
@@ -57,7 +58,7 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_move_layer 9 400>;
+        input-processors = <&move_temp_layer 9 400>;
         snipe {
             layers = <7>;
             input-processors = <&zip_xy_scaler 1 3>;
