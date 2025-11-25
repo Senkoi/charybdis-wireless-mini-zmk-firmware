@@ -333,7 +333,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCROLL:
@@ -417,7 +417,7 @@ layers:
   - {t: BASE, h: toggle}
   - SCROLL
   - L CLK
-  - R CLK
+  - {t: BASE, h: toggle}
   - {t: BASE, h: toggle}
   - {t: BASE, h: toggle}
 combos:
