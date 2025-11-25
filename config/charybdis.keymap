@@ -126,10 +126,10 @@
 
         AUTO-MOUSE {
             bindings = <
-&to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0
-&mo 7    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0
-&to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0    &to 0
-                        &mo 8  &mkp LCLK  &to 0    &to 0  &to 0
+&to 0    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &to 0
+&mo 7    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &to 0
+&to 0    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &to 0
+                        &mo 8  &mkp LCLK  &trans    &to 0  &trans
             >;
         };
     };
