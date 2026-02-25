@@ -80,10 +80,10 @@
 
         GAME {
             bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &none  &none  &none  &none  &none  &trans
-&kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &none  &none  &none  &none  &none  &none
-&kp N3  &kp LSHFT  &kp Z  &kp X   &kp C      &kp V           &none  &none  &none  &none  &none  &none
-                          &none   &kp SPACE  &kp LEFT_ALT    &none  &none
+&kp N1  &kp N1    &kp N2  &kp N3   &kp N4      &kp N5           &none  &none  &none  &none  &none  &td_layers
+&kp N2  &kp Q  &kp W  &kp E   &kp R      &kp T           &none  &none  &none  &none  &none  &none
+&kp N3  &kp A  &kp S  &kp D   &kp F      &kp G           &none  &none  &none  &none  &none  &none
+                          &kp TAB   &kp SPACE  &kp LEFT_ALT    &none  &none
             >;
         };
 
