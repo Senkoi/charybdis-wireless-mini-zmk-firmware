@@ -168,8 +168,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  GAME: ['1', '1', '2', '3', '4', '5', '', '', '', '', '', L_BASE L_GAME, '2', Q, W, E, R, T, '', '', '', '', '', '', '3', A, S, D, F, G, '', '', '', '', '', '',
-    TAB, SPACE, LEFT ALT, '', '']
+  GAME:
+  - '6'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BASE, h: toggle}
+  - {t: BASE, h: toggle}
+  - '7'
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '8'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - TAB
+  - SPACE
+  - LEFT ALT
+  - ''
+  - ''
   EXTRAS:
   - ZMK Studio
   - SHRUG
